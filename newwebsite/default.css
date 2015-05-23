@@ -40,7 +40,6 @@ body {
 #title {
   font-family:sans-serif;
   text-align:center;
-
 }
 
 h1 img {
@@ -125,7 +124,6 @@ ul.menu a:hover {
   color: white;
   border-radius:4px 4px 4px 4px;
   padding:7px;
-
 }
 
 img.screenshot {
@@ -147,6 +145,7 @@ a:hover {
 a {
   color: #999999;
 }
+
 .datestamp {
 font-size:75%;
 float:right;
