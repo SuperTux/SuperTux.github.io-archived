@@ -1,3 +1,6 @@
+/* backward compatibility for new HTML5 tags */
+article, aside, figure, footer, header, hgroup, menu, nav, section { display:block; }
+
 body {
     margin: 0;
     background-color: rgba(62, 102, 125, 1);
@@ -13,14 +16,7 @@ body {
     width: 210px;
     text-align: center;
     margin: 10px;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 1);
-    border-radius: 10px;
-    border-width: 2px;
-}
-
-#sideshot img {
-    padding: 3px;
+    padding: 1em;
 }
 
 #page {
@@ -158,11 +154,15 @@ ul.menu a:hover {
 }
 
 img.screenshot {
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgba(255, 255, 255, 1);
-    margin: 0;
-    padding: 5px;
+    border-style: none;
+    margin: 8px;
+    padding: 0;
+}
+
+a:hover img.screenshot {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -4px;
 }
 
 a:visited {
@@ -178,7 +178,11 @@ a {
 }
 
 .datestamp {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
     font-size: 75%;
-    float: right;
+    text-align: right;
     color: rgba(128, 128, 128, 1);
 }
